@@ -40,10 +40,10 @@ public class Exercices {
 
     //affiche les 10 nombres suivant celui passé en paramètre
     public static void ex5(int nombre) {
-        ArrayList<Integer>nombres = new ArrayList<>();
+        ArrayList<Integer> nombres = new ArrayList<>();
         nombres.add(nombre);
         for (int i = 1; i <= 10; i++) {
-           nombres.add(nombre+i);
+            nombres.add(nombre + i);
         }
         System.out.println(nombres);
     }
@@ -60,20 +60,27 @@ public class Exercices {
     }
 
     //affiche somme des nombres pairs <=100
-    public static void ex8(){
+    public static void ex8() {
         int somme = 0;
-        for (int i = 1; i<=100; i++){
-            if(i%2 == 0){
-                somme+=i;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                somme += i;
             }
         }
         System.out.println(somme + ".");
     }
 
     //affiche un triangle d'étoiles de la hauteur voulu.
-    public static void ex9(int nbLines){
-        for (int i = 1; i<=nbLines; i++){
-            System.out.println("*");
+    public static void ex9(int nbLines) {
+        for (int i = 0; i < nbLines; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
         }
+    }
+
+    public static void ex10() {
+
     }
 }
