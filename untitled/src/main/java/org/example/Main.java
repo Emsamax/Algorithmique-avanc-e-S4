@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -44,7 +46,7 @@ public class Main {
         for (int j = 0; j < tab.length; j++) {
             //parcour du tableau jusqu'a tab.lenght-j-1 pour eviter index out of bound + ne pas retrier les elements deja triés
             //car trie les elements de la droite vers la gauche(plus grand au plus petit).
-            for (int i = 0; i < tab.length-j-1; i++) {
+            for (int i = 0; i < tab.length - j - 1; i++) {
                 //couche de tri. met le plus grand élément de la liste à ca place.
                 if (tab[i + 1] < tab[i]) {
                     //System.out.println(i +"  " + tab.length);
@@ -60,6 +62,33 @@ public class Main {
                 System.out.println("");
             }
         }
+
+    }
+
+    //algorithme de tri par fusion fonction de fusion.
+    public static ArrayList<Integer> fusionFusionSort(ArrayList<Integer> array1, ArrayList <Integer>array2) {
+        return array1;
+    }
+
+    //algorithme de tri par fusion fonction de tri.
+    // recursif.
+    public static ArrayList<Integer> triFusionSort(ArrayList<Integer> tab) {
+        if (tab.size() <= 1) {
+            return tab;
+        } else{
+            //création des listes distincts
+            ArrayList<Integer> array1 = new ArrayList<>();
+            ArrayList<Integer> array2 = new ArrayList<>();
+            for (int i = 0; i < tab.size(); i++) {
+                if (i <= tab.size() / 2) {
+                    array1.add(i);
+                }else array2.add(i);
+
+            }
+            return fusionFusionSort(triFusionSort(array1), triFusionSort(array2));
+        }
+
+
 
     }
 }
