@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Defis-Fractales" />
+        <module name="untitled" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Defis-Fractales" target="17" />
+      <module name="TD3" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

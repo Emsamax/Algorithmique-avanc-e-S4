@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Algorithmique-avanc-e-S4.iml" filepath="$PROJECT_DIR$/.idea/Algorithmique-avanc-e-S4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Defis-Fractales/Defis-Fractales.iml" filepath="$PROJECT_DIR$/Defis-Fractales/Defis-Fractales.iml" />
       <module fileurl="file://$PROJECT_DIR$/TD1/TD1.iml" filepath="$PROJECT_DIR$/TD1/TD1.iml" />
       <module fileurl="file://$PROJECT_DIR$/TD2/TD2.iml" filepath="$PROJECT_DIR$/TD2/TD2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TD3/TD3.iml" filepath="$PROJECT_DIR$/TD3/TD3.iml" />
     </modules>
   </component>
 </project>
