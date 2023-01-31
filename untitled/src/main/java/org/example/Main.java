@@ -80,7 +80,7 @@ public class Main {
     public static int findInTab(int tab[], int n ) throws Exception {
         //parcour le tableau et sélectionne la case ou inserer l'element.
         // on part du principe que le tableau en parametre est trié.
-        int i = 0;
+        int i = 1;
        while(n < tab[i]){
            i++;
        }return i;
