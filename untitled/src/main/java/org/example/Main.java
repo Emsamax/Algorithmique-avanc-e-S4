@@ -83,19 +83,27 @@ public class Main {
         for (int i = 0; i < tab.length; i++) {
 
             //tri d'une case par permutation avec le minimum.
-            for (int j = i; j < tab.length; j++) {
-                if (tab[j] <= tab[i]) {
-                    int temp = tab[i];
-                    tab[i] = tab[j];
-                    tab[j] = temp;
+            int min = Integer.MAX_VALUE;
+            int indMin = 0;
+            for (int j = i ; j < tab.length; j++) {
+                if (tab[j] <= min) {
+                    min = tab[j];
+                    indMin = j;
                 }
+            }
+            if (min !=Integer.MAX_VALUE) {
+                int temp = tab[i];
+                tab[i] = tab[indMin];
+                tab[indMin] = temp;
+            }
+
                 for (int ent : tab) {
                     System.out.print(ent + "|");
                 }
                 System.out.println("");
             }
         }
-    }
+
 
     //crée une case vide à l'indice voulu et décale toutes les cases suivantes vers la droite.
     public static int[] insertBlanc(int[] tab, int i) {
@@ -237,7 +245,7 @@ public class Main {
             }
             int[] childTab1 = convertArrayToTab(childArray1);
             int[] childTab2 = convertArrayToTab(childArray2);
-            return recursiveFastSort(childTab1);// recursiveFastSort(childTab2);
+            return recursiveFastSort(childTab1); //recursiveFastSort(childTab2);
         }
     }
 
