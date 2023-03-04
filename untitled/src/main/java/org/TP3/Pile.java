@@ -1,4 +1,4 @@
-package org.TP2;
+package org.TP3;
 
 public interface Pile {
     public void empiler(Object ob);
